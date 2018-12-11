@@ -2,19 +2,13 @@
 <html>
 <head>
 <link rel="manifest" href="manifest.json">
-	<!--WEB APP-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#000000"/>
-	<!--iOS-->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta id="status-bar-meta" name="apple-mobile-web-app-status-bar-
-	style" content="default">
-	<meta name="apple-mobile-web-app-title" content="Calculator">
-<meta charset="UTF-8">
-<title>Calculator</title>
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script type="text/javascript" src="assets/js/calculator.js"></script>
-
+<!--WEB APP-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000"/>
+<!--iOS-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta id="status-bar-meta" name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="the Calculator">
 <!--icons-->
 <link rel="apple-touch-icon" href="touch-icons/touch-icon-
 iphone.png">
@@ -72,18 +66,20 @@ ratio: 3)" rel="apple-touch-startup-image" />
 		<button class="button number" onclick="Calculator.type('.')">.</button>
 		<button class="button function" onclick="Calculator.display('')">C</button>
 		<button class="button operator" onclick="Calculator.e()">=</button>
+
 		<script>
-	if ('serviceWorker' in navigator) {
-	     window.addEventListener('load', function() {
-	navigator.serviceWorker.register('sw.js').then(function(registration)
-	{
-	           // Registration was successful
-	           console.log('ServiceWorker registration successful with scope: ', registration.scope);
-	     }, function(err) {
-	           // registration failed :(
-	           console.log('ServiceWorker registration failed: ', err);
-	}); });
-	} </script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+		  		navigator.serviceWorker.register('sw.js').then(function(registration) {
+		  		// Registration was successful
+		  		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+		  	}, function(err) {
+		  		// registration failed :(
+		  		console.log('ServiceWorker registration failed: ', err);
+		  	});
+		  });
+		}
+		</script>
 	</div>
 </body>
 </html>
