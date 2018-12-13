@@ -19,3 +19,7 @@ A very simple calculator, built as a Progressive Web App.
 **Version 1.2.0**
 
 - changed the color
+
+**Version 1.2.1**
+
+- added pi
