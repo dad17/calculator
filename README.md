@@ -23,3 +23,7 @@ A very simple calculator, built as a Progressive Web App.
 **Version 1.2.1**
 
 - added pi
+
+**Version 1.2.2**
+
+- added pi and e

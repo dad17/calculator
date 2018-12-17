@@ -50,7 +50,9 @@
 		<button class="button function" onclick="Calculator.display('')">C</button>
 		<button class="button operator" onclick="Calculator.e()">=</button>
 		<button class="button operator" onclick="Calculator.type(Math.PI)">π</button>
-
+		<button class="button operator" onclick="Calculator.type('(')">(</button>
+		<button class="button operator" onclick="Calculator.type(')')">)</button>
+		<button class="button operator" onclick="Calculator.type(Math.E)">e</button>
 		<script>
 		if ('serviceWorker' in navigator) {
 			window.addEventListener('load', function() {
