@@ -26,4 +26,8 @@ A very simple calculator, built as a Progressive Web App.
 
 **Version 1.2.2**
 
-- added pi and e
+- added parenthesis and e
+
+**Version 1.3.0**
+
+- added keyboard support
